@@ -22,9 +22,9 @@ uint32 show_name(array<string,5> bandname)
     return true;
 }
 
-uint32 teststring()
+uint32 teststring(string* test1)
 {
-    string* test1 = new string;
+    
     *test1 = "mygo";
     cout<<*test1<<endl;
     test1->clear();
@@ -53,7 +53,7 @@ uint32 teststring()
     {
         cout<<"hyw" << endl;
     }
-    delete test1;
+
     return true;
 }
 
@@ -67,7 +67,8 @@ int main(int argc, char const *argv[])
 {
     cout<<"hello world"<<endl;
 #if string_test
-    if (teststring())
+    string* test1 = new string;
+    if (teststring(test1))
     {
         string band = "bang dream ";
         string party = "live band party";
@@ -76,6 +77,7 @@ int main(int argc, char const *argv[])
         bang_dream.append(party);
         cout<<bang_dream<<endl;
     }
+    delete test1;
 #endif
 #if band_test
 #endif
