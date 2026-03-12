@@ -39,7 +39,7 @@ LD_FLAG :=
 # LD_FLAG := -shared -fPIC
 
 # 设置自定义源文件列表
-HEAD_PATH := $(PRJ_DIR)/inc/
+HEAD_PATH := $(PRJ_DIR)/inc
 LIB_PATH := $(PRJ_DIR)/lib/
 LIB_FLAG := -lpthread
 SRC_LIB :=
