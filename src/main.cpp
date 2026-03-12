@@ -21,7 +21,10 @@ uint32 show_name(array<string,5> bandname)
     cout<< endl;
     return true;
 }
-
+uint32 teststring()
+{
+    cout<<"define but not used "<< endl;
+}
 uint32 teststring(string* test1)
 {
     
